@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('../fonts/MuseoSansCyrl.otf');
+    font-style: normal;
+}
+
+@mixin MuseoSansCyrl {
+    font-family: 'MuseoSansCyrl', sans-serif;
+}

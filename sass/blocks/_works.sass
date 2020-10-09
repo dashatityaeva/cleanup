@@ -1,0 +1,76 @@
+.works
+  position: relative
+  padding: 80px 0
+  //height: auto
+  &__title
+    padding-bottom: 57px
+    font-size: 44px
+    line-height: 52px
+    text-align: center
+    color: #211F40
+    
+.slider
+  position: relative
+  max-height: 488px
+.slide
+  &__board
+    position: relative
+    background: #FFFFFF
+    box-shadow: 0px 12px 40px 2px rgba(0, 0, 0, 0.05)
+    border-radius: 8px
+    width: 540px
+    height: 304px
+    left: 667px
+    bottom: 400px
+    padding: 35px 32px 29px 
+  &__title
+    font-size: 24px
+    line-height: 32px
+    color: #211F40
+    margin-bottom: 20px
+  &__subtitle
+    display: flex
+    font-size: 12px
+    line-height: 16px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #F25929
+    padding-bottom: 8px
+  &__description
+    position: static
+    font-size: 16px
+    line-height: 24px
+    color: #000000
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__next
+    left: 1223px
+    bottom: 704px
+    opacity: 0.4
+    z-index: -1
+  
+.slick-arrow
+  display: flex
+  position: absolute
+  width: 60px
+  height: 60px
+  border: none
+  background: red
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  font-size: 0
+  z-index: 2
+  cursor: pointer
+.slick-prev 
+  background: transparent url('../img/prev.svg')  50% 50%  no-repeat
+  right: 160px
+.slick-next 
+  background: url('../img/next.svg') 50% 50% no-repeat
+  right: 80px
+  top: 0px
+
+.slick-list
+  overflow: hidden  
+.slick-track
+  display: flex 
+  //max-width: 488px 

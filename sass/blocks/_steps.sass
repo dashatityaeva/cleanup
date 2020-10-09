@@ -1,0 +1,107 @@
+.steps
+  padding-top: 100px
+  min-height: 900px
+  &__title
+    max-width: 713px
+    font-size: 44px
+    line-height: 52px
+    color: #FFFFFF
+    margin-bottom: 135px
+  &__group
+    display: flex
+    justify-content: space-between 
+  &__step
+    flex-basis: 33% 
+  &__line
+    width: 1440px
+    height: 338px
+.step
+  max-width: 395px
+  background: #424B70
+  box-shadow: 0px 12px 40px 2px rgba(0, 0, 0, 0.05)
+  border-radius: 4px 
+  padding: 40px 37px 48px 32px 
+  opacity: 0
+  &__svg
+    width: 76px
+    height: 76px
+    margin-bottom: 24px
+  &__title
+    font-size: 20px
+    line-height: 28px
+    color: #FFFFFF
+  &__description
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF 
+    margin: 12px 0
+.step1
+  animation: SlideBottom1 3s 
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+@keyframes SlideBottom1
+  from
+    opacity: 0
+    transform: translateY(-80px)
+  to
+    opacity: 1
+    transform: translateY(0px)
+
+.step2
+  animation: SlideBottom2 3s 
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+@keyframes SlideBottom2
+  from
+    opacity: 0
+    transform: translateY(0px)
+  to
+    opacity: 1
+    transform: translateY(80px)      
+
+.step3
+  animation: SlideBottom3 3s 
+  animation-iteration-count: 1
+  animation-fill-mode: forwards
+@keyframes SlideBottom3
+  from
+    opacity: 0
+    transform: translateY(80px)
+  to
+    opacity: 1
+    transform: translateY(160px)              
+
+
+@keyframes dash
+  from
+    stroke-dashoffset: 0
+  to
+    stroke-dashoffset: 1590
+  
+.line
+  &__block
+    position: relative
+.line
+  &__one, &__two
+    position: absolute
+    top: 220px
+    left: 0px
+  &__path
+    stroke-dasharray: 12 20
+  &__anim  
+    stroke: #F25929
+    animation: dash 5s linear forwards
+    stroke-dasharray:  1590 
+    stroke-dashoffset: 0 
+    animation-direction: reverse
+.lin
+  &__path
+    stroke: #293255
+    stroke-dasharray: 12 20
+    stroke-width: 5  
+
+
+
+ 
+
+

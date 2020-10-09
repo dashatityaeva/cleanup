@@ -1,0 +1,44 @@
+.partners
+  margin-top: 80px
+  margin-bottom: 100px
+  &__title
+    font-size: 44px
+    line-height: 52px
+    text-align: center
+    color: #211F40
+    margin-bottom: 74px
+  &__imgs
+    opacity: 0
+    overflow: hidden
+    width: 1440px
+    
+  &__img
+    margin: 0
+    &:not(:last-child)
+    margin-bottom: 48px
+.img__wrap
+  overflow: hidden
+  width: 1440px
+.moveLeft
+  animation: moveLeft 3s
+  animation-fill-mode: forwards
+@keyframes moveLeft
+  0%
+    opacity: 0
+    transform: translateX(1000px)  
+  100%
+    opacity: 1
+    transform: translateX(0px) 
+       
+      
+.moveRight  
+  animation: moveRight 3s
+  animation-fill-mode: forwards
+@keyframes moveRight
+  0%
+    opacity: 1
+    transform: translateX(0)  
+  100%
+    opacity: 0
+    transform: translateX(1000px) 
+

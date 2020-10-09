@@ -1,0 +1,116 @@
+.services
+    padding-top: 30px
+    padding-bottom: 14px
+    &__title
+        font-size: 44px
+        color: #211F40
+        line-height: 52px
+        margin-bottom: 20px
+    &__description
+        font-size: 16px
+        line-height: 28px
+        width: 350px
+        margin-bottom: 40px
+    &__column-left
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        width: 463px
+        min-height: 720px
+        
+    &__button
+        width: 246px
+        height: 56px
+        border: none
+        background: #2C47F0
+        border-radius: 4px 
+        color: #FFFFFF  
+        font-size: 16px 
+        animation-fill-mode: backwards
+    &__column-right
+        width: 821px
+        margin-top: -110px
+        background: #FFFFFF
+        box-shadow: 0px 12px 40px 2px rgba(0, 0, 0, 0.05)
+        border-radius: 4px
+        z-index: 99
+    &__group
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        justify-content: space-around
+        margin-top: 40px
+        margin-bottom: 64px
+    &__item
+        flex-basis: 50%
+        max-width: 300px
+    &__name
+        font-size: 20px
+        line-height: 26px
+        margin-bottom: 10px
+    &__specification
+        font-size: 14px
+        line-height: 20px
+        color: #808080
+    &__svg
+        width: 40px
+        height: 40px
+        margin-bottom: 16px    
+    &__triangle
+        width: 0
+        height: 0
+        border-top: 170px solid #f5f9fd 
+        border-left: 1360px solid #ffffff 
+        position: relative
+    &__main
+        display: inline-flex
+        background: #ffffff  
+        width: 1360px
+        height: auto
+        padding-bottom: 117px
+    &__bg
+        width: 305px
+        height: 305px
+    &__block    
+        position: absolute
+        top: 170px
+
+.tabs
+    &-nav
+        display: flex
+        justify-content: space-between
+        margin-top: 48px
+        margin-left: 48px
+        max-width: 589px
+        border: 1px solid #D3DCE4
+        border-radius: 40px    
+        &__item
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            color: #000000
+            cursor: pointer
+            padding: 7px 36px  
+            &:last-child
+                &:after
+                    content: ''
+                    position: absolute
+                    background: #E9663D
+                    border: 1px solid #E9663D
+                    border-radius: 50%
+                    height: 5px
+                    width: 5px
+                    margin-left: 4px
+                  
+        &__item.is-active
+            background: #2C47F0
+            border-radius: 40px
+            color: #FFFFFF
+            animation: fadeIn 0.8s
+.tab
+    display: none
+.tab.is-active
+    display: block
+    animation: fadeIn 1.5s 
+                     
+
