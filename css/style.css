@@ -239,6 +239,10 @@ h1, h2, h3, h4, p {
   max-width: 300px;
 }
 
+.services__item:not(:nth-child(7)):not(:nth-child(8)) {
+  margin-bottom: 65px;
+}
+
 .services__name {
   font-size: 20px;
   line-height: 26px;
