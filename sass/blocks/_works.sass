@@ -1,7 +1,7 @@
 .works
   position: relative
   padding: 80px 0
-  //height: auto
+  //height: 100%
   &__title
     padding-bottom: 57px
     font-size: 44px
@@ -74,3 +74,22 @@
 .slick-track
   display: flex 
   //max-width: 488px 
+@media ( max-width: 1400px )
+  .slide
+    &__next
+      display: none
+    &__board
+      left: 20px
+      bottom: 200px
+  .slick-prev 
+    left: 0
+  .slick-next
+    left: 80px 
+  
+@media ( max-width:  550px)
+  .works
+    padding-bottom: 350px
+  .slide
+      &__board
+          width: 90%  
+          height: auto

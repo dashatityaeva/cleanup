@@ -46,11 +46,7 @@ $(document).ready(function () {
         speed: 900,
         //autoplay: true,
         autoplaySpeed: 6000
-    });
-
-
-    
-    
+    });  
 });
 
     

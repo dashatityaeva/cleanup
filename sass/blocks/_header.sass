@@ -1,5 +1,6 @@
 .header
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
     align-items: center
     padding-top: 30px
@@ -9,6 +10,7 @@
         fill: #186DEE
     &__right  
         display: flex
+        flex-wrap: wrap
         align-items: center
     &__nav
         display: flex
@@ -59,3 +61,28 @@
         line-height: 24px
         color: #211F40
         
+@media ( max-width: 1200px )
+    .header
+        &__right 
+            display: flex
+            justify-content: space-between
+            width: 100%
+
+@media ( max-width: 932px )
+    .header
+        &__nav   
+            flex-direction: column
+            &:after
+                display: none
+            
+        &__item
+            margin-right: 0     
+@media ( max-width:  425px)
+    .header
+        justify-content: center
+        &__right
+            margin-top: 10px
+            width: auto
+        &__info
+            display: none
+                
